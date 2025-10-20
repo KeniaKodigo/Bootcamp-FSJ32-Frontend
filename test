@@ -1,1 +1,9 @@
 Agregando un nuevo archivo desde github (nube)
+
+- Repasando comandos de github basicos
+- lista de comandos para subir un cambio al repositorio remoto
+
+# nos sirve para verificar el estado de los elementos del repositorio local
+1. git status o git status -s 
+# agregar los elementos al staging (zona de preparacion)
+2. git add --all o git add <elemento a agregar>
