@@ -7,3 +7,7 @@ Agregando un nuevo archivo desde github (nube)
 1. git status o git status -s 
 # agregar los elementos al staging (zona de preparacion)
 2. git add --all o git add <elemento a agregar>
+# guardar lo que esta en el staging y agregar un comentario de lo que queres subir al repositorio remoto
+3. git commit -m "comentario"
+# subir el cambio al repositorio remoto
+4. git push origin <rama>
