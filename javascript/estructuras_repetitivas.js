@@ -69,7 +69,7 @@ function usoWhile(){
     console.log(`Hola, bienvenido ${nombre}`)
 }
 
-//usoWhile()
+usoWhile()
 
 console.log("********* USO DEL WHILE ****")
 function tablaMultiplicarWhile(tabla){
@@ -97,6 +97,13 @@ function usoDOWhile(tabla){
         contador++
     }
     while(contador <= 10)
+
+
+    // while(contador <= 10){
+    //     let resultado = contador * tabla;
+    //     console.log(`${contador} * ${tabla} = ${resultado}`)
+    //     contador++
+    // }
 }
 
 usoDOWhile(10)
