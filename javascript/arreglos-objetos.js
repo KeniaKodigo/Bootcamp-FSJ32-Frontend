@@ -35,4 +35,14 @@ if(persona.esCasado){
 // Arreglos
 
 let array_frutas = ["🍓", "🍇", "🍉"];
+
+array_frutas.forEach((fruta) => {
+    console.log(fruta)
+})
+
 let array_notas = [9.8,10,7.5,8]
+
+//accediendo a un elemento en especifico del arreglo (a travez de la posicion)
+console.log(array_frutas[2])
+console.log(array_frutas[1])
+console.log(array_frutas[0])
