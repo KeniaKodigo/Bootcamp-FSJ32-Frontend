@@ -46,3 +46,12 @@ let array_notas = [9.8,10,7.5,8]
 console.log(array_frutas[2])
 console.log(array_frutas[1])
 console.log(array_frutas[0])
+
+
+let edad = 20;
+
+let lista = [23, 67, 90, 100]
+lista[0]
+lista[1]
+lista[2] //90
+lista[3]
