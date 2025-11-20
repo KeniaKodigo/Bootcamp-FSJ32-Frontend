@@ -7,7 +7,7 @@ console.log(document)
 //Accediendo a los elementos
 
 //accediendo al h1 por ID
-let titulo = document.getElementById("title")
+let titulo = document.getElementById("title") //devueve el nodo
 console.log(titulo)
 
 //accediendo por etiqueta
@@ -27,6 +27,9 @@ let titulo2 = document.getElementById("title")
 
 //textContent sirve para devolver solo el contenido de la etiqueta HTML
 console.log(titulo2.textContent)
+
+//tambien puedes cambiar el contenido del texto
+titulo2.textContent = "Introduccion & Uso del DOM"
 
 
 //Manipulacion del DOM
