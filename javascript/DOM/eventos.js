@@ -33,3 +33,8 @@ function enviarDatos(){
         Tu lugar favorito es ${lugar}
     `)
 }
+
+function escribir(){
+    let lugar = document.getElementById("lugar").value //dato
+    console.log(lugar)
+}
