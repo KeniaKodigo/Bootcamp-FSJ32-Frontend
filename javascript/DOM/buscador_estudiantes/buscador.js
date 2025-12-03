@@ -26,6 +26,9 @@ function buscarEstudiante(){
 
     let estudiantes_filtrados = estudiantes.filter((estudiante) => estudiante.nombre.toLowerCase().includes(entrada_texto.value))
 
+    //filter() => filtrar arreglos  ([])
+    //includes() => verificar si el texto esta dentro de la cadena (true/false)
+
     //limpiando el contenedor
     resultado.innerHTML = ""
 
