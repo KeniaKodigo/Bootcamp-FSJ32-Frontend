@@ -21,3 +21,19 @@ export function saludar(){
 export function sumar(num1:number, num2:number){
     return num1 + num2
 }
+
+let libro = {
+    titulo: "El principito",
+    autor: "Robert C",
+    numero_paginas: 210,
+    numero_capitulos: 30
+}
+
+libro.titulo
+
+let libro2 = {
+    titulo: "Verdad o Reto",
+    autor: "Mary",
+    numero_paginas: 160,
+    numero_capitulos: 10
+}
