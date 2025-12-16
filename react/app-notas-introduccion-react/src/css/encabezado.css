@@ -1,3 +1,9 @@
 .title-header{
     color: #a5ebf5;
 }
+
+.container-nota{
+    border: 1px solid #116c4b;
+    padding: 10px;
+    background-color: #3e6166;
+}

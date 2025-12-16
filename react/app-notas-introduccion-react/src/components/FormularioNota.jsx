@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { v4 as uuidv4 } from 'uuid';
+import { MdOutlineEditNote } from "react-icons/md";
 
 // capturando los datos compartidos ({listaNotas, setListaNotas})
 export default function FormularioNota({listaNotas, setListaNotas}) {
@@ -27,12 +29,15 @@ export default function FormularioNota({listaNotas, setListaNotas}) {
     const handleSubmit = () => {
         //actualizar la lista
         setListaNotas([...listaNotas, {
+            id: uuidv4(),
             titulo: inputTitulo,
             descripcion: inputDescripcion
         }])
-    }
 
-    console.log(listaNotas)
+        //limpiamos las entradas de datos
+        setInputTitulo("")
+        setInputDescripcion("")
+    }
 
     return (
         <div>
@@ -47,7 +52,7 @@ export default function FormularioNota({listaNotas, setListaNotas}) {
                     <input type="text" id='descripcion' value={inputDescripcion} onChange={(e) => handleInputDescripcion(e)} />
                 </div>
                 <div>
-                    <button onClick={handleSubmit} type='button'>Registrar Nota</button>
+                    <button onClick={handleSubmit} type='button'><MdOutlineEditNote />Registrar Nota</button>
                 </div>
             </form>
         </div>

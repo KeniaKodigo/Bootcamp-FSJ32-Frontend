@@ -3,11 +3,12 @@ import FormularioNota from './components/FormularioNota'
 import ListaNotas from './components/ListaNotas'
 import './css/App.css'
 import './css/encabezado.css'
+//import 'bootstrap/dist/css/bootstrap.min.css'
 
 //componente funcional
 function App() {
   //creando un estado para la lista de notas
-  const [listaNotas, setListaNotas] = useState([])
+  const [listaNotas, setListaNotas] = useState([]) //objeto de informacion
 
   return (
       <>
@@ -15,7 +16,7 @@ function App() {
         <section>
           {/** pasamos mediante props el estado de la lista de notas */}
           <FormularioNota listaNotas={listaNotas} setListaNotas={setListaNotas} />
-          <ListaNotas />
+          <ListaNotas listaNotas={listaNotas} setListaNotas={setListaNotas} />
         </section>
       </>
 
